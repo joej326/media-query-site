@@ -1,0 +1,109 @@
+body{
+
+}
+.main-box {
+    width: 100vw;
+    max-height: 53vh;
+    position: relative;
+
+}
+.taskbar{
+  display: none;
+}
+#h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.workshop-title {
+    text-align: center;
+    position: relative;
+    /* bottom: 40vh; */
+    font-size: 60px;
+    color: white;
+}
+.main-mobile-header{
+  width: 100%;
+  height: 10vh;
+  background: white;
+}
+.top-pic {
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    background: url(http://cdn01.wideopentech.com/themes/wot-2013-gm/_/img/wot-masthead-dark.jpg);
+    background-position: top;
+    background-size: auto;
+    top: 30px;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.top-icon {
+    width: 5vw;
+    position: absolute;
+    left: 18px;
+    top: 15px;
+}
+
+.hamburger {
+    width: 5vh;
+    height: 5vh;
+    background: red;
+    position: absolute;
+    right: 28px;
+    top: 12px;
+}
+
+@media(min-width: 480px){
+.workshop-title{
+  font-size: 24vw;
+
+}
+#h2{
+  font-size: 11vw;
+}
+}
+@media(min-width: 670px){
+  .workshop-title {
+    font-size: 167px;
+}
+#h2 {
+  font-size: 66px;
+}
+}
+@media (min-width: 775px){
+  .main-mobile-header{
+    display:none
+  }
+  .workshop-title {
+    position: relative;
+    top: 13vh;
+}
+  #h2{
+
+  }
+}
+@media (min-width: 900px){
+  .top-pic{
+    max-height: 53vh;
+
+  }
+}
+
+@media (min-width: 1000px){
+  .hamburger{
+    display: none;
+  }
+  .taskbar {
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    margin: -39px;
+    margin-right: 21px;
+    color: white;
+}
+.taskbar li {
+    margin: 77px;
+    margin-left: -27px;
+}
+}
